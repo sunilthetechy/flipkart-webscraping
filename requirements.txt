@@ -1,0 +1,4 @@
+flask
+pyppeteer
+bs4
+asyncio

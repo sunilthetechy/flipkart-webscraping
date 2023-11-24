@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Web Scraping</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Riona+Sans:wght@700&family=Riona+Sans:ital,wght@1,700&display=swap">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #287FF0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40%;
+            height: 50%;
+        }
+
+        h1 {
+            color: #2874f0;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+
+        input[type="checkbox"] {
+            margin-top: 5px; 
+            padding: 0px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #2874f0;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 70%;
+        }
+        .footer {
+            background-color: #F8E831;
+            padding: 1px;
+            border-radius: 8px;
+            text-align: center;
+            color: #333;
+            width: 100%;
+            
+           }
+           h1 {
+    font-family: 'Riona Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -10px;
+    color: #047BD5;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <img src="{{ url_for('static', filename='logo.png') }}" width="150px" alt="Flipkart Logo">
+        <h1>Web Scraping</h1>
+        <form method="POST" action="/scrape">
+            <input type="text" id="product" name="product" placeholder="Enter the Product Name"><br>
+            <input type="text" id="page" name="page" placeholder="How many pages do you want to scrape?"><br>
+           <br>
+            
+            <button type="submit">Scrape</button>
+            <br><br><br><br><br>
+        </form>
+        <br><br><br><br>
+        <div class="footer">
+            <p style="font-family: 'Riona Sans', sans-serif;">Webscraping Project by Sunil The Techy</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
