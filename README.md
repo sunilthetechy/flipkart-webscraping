@@ -12,8 +12,7 @@ This Python application uses Flask for the frontend and Pyppeteer for web scrapi
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://https://github.com/sunilthetechy/flipkart-webscraping.git
     ```
 
 2. Install the required dependencies:
